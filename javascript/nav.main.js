@@ -19,6 +19,8 @@
       if(loader){
         document.body.style.overflowY = "auto";
         loader.style.display = "none";
+      }else{
+          loader.style.display = "none";
       }
       if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         navbar_inner.classList.add("row__nav");
