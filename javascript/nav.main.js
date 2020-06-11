@@ -102,4 +102,25 @@
       menu_div.classList.remove(removeAnime);
       body.style.overflowY = overflow;
 
+      if(overflow == 'hidden'){
+        for(let i = 0; i < m__links.length; i++){
+
+          m__links[i].style.animationDelay = i/m__links.length+"s";
+          m__links[i].classList.add('anime__link');
+
+        }
+      }else{
+
+        for(let i = 0; i < m__links.length; i++){
+
+          // m__links[i].classList.add('anime__link');
+          setTimeout(()=>{
+            m__links[i].classList.remove('anime__link');
+
+          },100)
+
+        }
+
+      }
+
     }
